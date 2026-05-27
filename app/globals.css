@@ -1,5 +1,49 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+        :root {
+            --color-navy: #1e3a8a;
+            --color-slate: #64748b;
+            --color-gold: #ca8a04;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #334155;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(30, 58, 138, 0.9), rgba(30, 58, 138, 0.4));
+        }
+
+        .text-navy {
+            color: var(--color-navy);
+        }
+
+        .bg-navy {
+            background-color: var(--color-navy);
+        }
+
+        .text-gold {
+            color: var(--color-gold);
+        }
+
+        .bg-gold {
+            background-color: var(--color-gold);
+        }
+
+        .trust-badge-shadow {
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+    
